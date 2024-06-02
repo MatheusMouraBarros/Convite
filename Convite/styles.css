@@ -1,4 +1,22 @@
+@font-face {
+    font-family: 'TheSeasons';
+    src: url('fonts/Fontspring-DEMO-theseasons-lt.otf');
+}
+
 /* Estilos para dispositivos móveis */
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #E4A461;
+    color: white;
+}
+
+::-moz-selection {
+    background-color: #E4A461;
+    color: white;
+}
 
 /* Header */
 header {
@@ -8,50 +26,46 @@ header {
 
 /* Corpo */
 body {
-    text-decoration: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 /* Versículo */
 .versiculo {
     display: flex;
     justify-content: center;
+    font-family: 'Cormorant Garamond', sans-serif;
     font-size: 12px;
-    padding-bottom: 2%;
+    font-weight: 100;
+    text-align: center;
 }
 
 /* Família */
 .familia {
     display: flex;
     justify-content: center;
-    font-size: 12px;
     gap: 5%;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
 }
 
-/* Pais Ana */
-.paisAna {
+/* Pais Ana e Matheus */
+.paisAna,
+.paisMatheus {
     display: flex;
     flex-direction: column;
 }
 
 /* Cleide e Paulo */
 .cleide,
-.paulo {
-    margin: 0%;
-}
-
-/* Pais Matheus */
-.paisMatheus {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Líbia e Luciano */
+.paulo,
 .libia,
 .luciano {
-    margin: 0%;
+    margin: 0;
+    text-align: center;
 }
 
 /* Nome */
@@ -64,11 +78,18 @@ body {
     font-size: 18px;
 }
 
-/* Ana, 'e', Matheus */
+/* Ana, Matheus */
 .ana,
-.e,
 .matheus {
-    margin: 0%;
+    margin: 0;
+    font-family: 'TheSeasons';
+    font-weight: 100;
+}
+
+/* e */
+.e {
+    margin: 0;
+    font-weight: 100;
 }
 
 /* Data */
@@ -85,38 +106,57 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Cormorant Garamond', sans-serif;
 }
 
-/* Sábado */
-.sabado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1%;
+/* id mês ano e dia */
+#mes {
+    font-size: 20px;
+    margin-bottom: 1px;
 }
 
-/* Horas */
+#ano {
+    font-size: 20px;
+    margin-top: -1px;
+}
+
+#dia {
+    font-size: 50px;
+    margin-top: -15px;
+}
+
+/* Sábado e Horas */
+.sabado,
 .horas {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1%;
+    padding: 15px;
 }
 
-/* Traco */
-.traco {
-    margin: 0%;
-}
-
-/* Saba e H */
+/* Saba, L e H */
 .saba,
 .h,
 .l {
-    margin-bottom: 0%;
+    margin-bottom: 0;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* saba e h */
+.saba,
+.h {
+    border-top: 1px solid #E4A461;
+    border-bottom: 1px solid #E4A461;
+    width: 110px;
+    text-align: center;
+    margin-top: 35px;
 }
 
 /* Ícones */
 .icones {
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     font-size: 9.5px;
@@ -124,7 +164,7 @@ body {
     color: #E4A461;
 }
 
-/* Local */
+/* Local, Presença, Avisos e Presentes */
 .local,
 .presenca,
 .avisos,
@@ -133,6 +173,9 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-weight: 100;
+    text-align: center;
 }
 
 /* Mídia Query para Telas de 430 x 932 */
@@ -144,13 +187,5 @@ body {
 
     .icones {
         font-size: 8px;
-    }
-
-    /* Exemplo de ocultar ou ajustar elementos adicionais, se necessário */
-    .setembro,
-    .sabado,
-    .horas,
-    .icones {
-        display: none;
     }
 }
