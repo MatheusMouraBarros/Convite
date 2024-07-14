@@ -3,7 +3,6 @@
     src: url('fonts/Fontspring-DEMO-theseasons-lt.otf');
 }
 
-/* Estilos para dispositivos móveis */
 html {
     scroll-behavior: smooth;
 }
@@ -18,24 +17,22 @@ html {
     color: white;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: center;
     padding: 1%;
 }
 
-/* Corpo */
 body {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    background-image: url('assets/bakground\(1920\ x\ 1080\ px\).png'); /* Imagem de fundo */
-    background-size: cover; /* Cobrir toda a área do body */
-    background-position: center; /* Centralizar a imagem */
+    background-image: url('assets/bakground\(1920\ x\ 1080\ px\).png');
+    background-size: cover;
+    background-position: center;
+    font-size: 1vw; /* Fonte base relativa ao viewport width */
 }
 
-/* Versículo */
 .versiculo {
     display: flex;
     justify-content: center;
@@ -46,7 +43,6 @@ body {
     padding: 2%;
 }
 
-/* Família */
 .familia {
     display: flex;
     justify-content: center;
@@ -59,7 +55,6 @@ body {
     font-weight: 100;
 }
 
-/* Pais Ana e Matheus */
 .paisAna,
 .paisMatheus {
     display: flex;
@@ -67,7 +62,6 @@ body {
     align-items: center;
 }
 
-/* Cleide e Paulo */
 .cleide,
 .paulo,
 .libia,
@@ -76,7 +70,6 @@ body {
     text-align: center;
 }
 
-/* Nome */
 .nome {
     display: flex;
     flex-direction: column;
@@ -86,7 +79,6 @@ body {
     font-size: 1.5em;
 }
 
-/* Ana, Matheus */
 .ana,
 .matheus {
     margin: 0;
@@ -94,13 +86,11 @@ body {
     font-weight: 100;
 }
 
-/* e */
 .e {
     margin: 0;
     font-weight: 100;
 }
 
-/* Data */
 .data {
     display: flex;
     justify-content: center;
@@ -111,7 +101,6 @@ body {
     font-size: 1.5em;
 }
 
-/* Setembro */
 .setembro {
     display: flex;
     flex-direction: column;
@@ -119,7 +108,6 @@ body {
     font-family: 'Cormorant Garamond', sans-serif;
 }
 
-/* id mês ano e dia */
 #mes {
     font-size: 1.5em;
     margin-bottom: 1px;
@@ -135,7 +123,6 @@ body {
     margin-top: -15px;
 }
 
-/* Sábado e Horas */
 .sabado,
 .horas {
     display: flex;
@@ -144,7 +131,6 @@ body {
     padding: 15px;
 }
 
-/* Saba, L e H */
 .saba,
 .h,
 .l {
@@ -154,7 +140,6 @@ body {
     font-weight: 600;
 }
 
-/* saba e h */
 .saba,
 .h {
     border-top: 1px solid #E4A461;
@@ -164,7 +149,6 @@ body {
     margin-top: 35px;
 }
 
-/* Ícones */
 .icones {
     padding-top: 20px;
     display: flex;
@@ -174,7 +158,6 @@ body {
     color: #E4A461;
 }
 
-/* Local, Presença, Avisos e Presentes */
 .local,
 .presenca,
 .avisos,
@@ -188,10 +171,9 @@ body {
 }
 
 .icones img {
-    width: 130px; /* Tamanho padrão para ícones */
+    width: 10vw; /* Tamanho relativo ao viewport width */
 }
 
-/* Background Responsivo */
 @media only screen and (max-width: 1024px) {
     body {
         background-image: url('assets/bakground\(1024\ x\ 768\ px\).png');
@@ -206,157 +188,122 @@ body {
         background-size: cover;
         background-position: center;
     }
-}
-
-@media only screen and (max-width: 480px) {
-    body {
-        background-image: url('assets/bakground\(480\ x\ 800\ px\).png');
-        background-size: cover;
-        background-position: center;
-    }
-}
-
-/* Mídia Query para Telas de 768px ou menos */
-@media only screen and (max-width: 768px) {
     .familia {
         gap: 1.5%;
         font-size: 1em;
     }
-
     .icones {
         font-size: 0.8em;
     }
-
     .icones img {
-        width: 110px; /* Ajuste do tamanho dos ícones */
+        width: 15vw;
     }
-
     .versiculo {
         font-size: 1em;
         padding: 3%;
     }
-
     .nome {
         font-size: 1.3em;
     }
-
     .data {
         font-size: 1.3em;
     }
-
     #mes,
     #ano {
         font-size: 1.3em;
     }
-
     #dia {
         font-size: 2.8em;
     }
-
     .saba,
     .h,
     .l {
         font-size: 1.3em;
     }
-
     .saba,
     .h {
         width: 100px;
     }
 }
 
-/* Mídia Query para Telas de 430px ou menos */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 480px) {
+    body {
+        background-image: url('assets/bakground\(412\ x\ 915\ px\).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: top;
+    }
     .familia {
         gap: 1%;
-        font-size: 0.9em;
+        font-size: 3em;
     }
-
     .icones {
-        font-size: 0.7em;
+        font-size: 2em;
     }
-
     .icones img {
-        width: 90px; /* Ajuste do tamanho dos ícones */
+        width: 20vw;
     }
-
     .versiculo {
-        font-size: 0.9em;
-        padding: 5%;
+        font-size: 3em;
+        padding: 4%;
     }
-
     .nome {
-        font-size: 1.2em;
+        font-size: 5em;
     }
-
     .data {
-        font-size: 1.2em;
+        font-size: 4em;
     }
-
     #mes,
     #ano {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
-
     #dia {
         font-size: 2.5em;
     }
-
     .saba,
     .h,
     .l {
         font-size: 1.2em;
     }
-
     .saba,
     .h {
         width: 90px;
     }
 }
 
-/* Mídia Query para Telas de 320px ou menos */
 @media only screen and (max-width: 320px) {
     .familia {
         gap: 0.5%;
-        font-size: 0.8em;
+        font-size: 1em;
     }
-
     .icones {
-        font-size: 0.6em;
-    }
-
-    .icones img {
-        width: 70px; /* Ajuste do tamanho dos ícones */
-    }
-
-    .versiculo {
         font-size: 0.8em;
-        padding: 4%;
     }
-
+    .icones img {
+        width: 25vw;
+    }
+    .versiculo {
+        font-size: 1em;
+        padding: 5%;
+    }
     .nome {
         font-size: 1em;
     }
-
     .data {
         font-size: 1em;
     }
-
     #mes,
     #ano {
         font-size: 1em;
     }
-
     #dia {
         font-size: 2em;
     }
-
     .saba,
     .h,
     .l {
         font-size: 1em;
     }
-
     .saba,
     .h {
         width: 70px;
