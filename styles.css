@@ -83,7 +83,7 @@ body {
 .matheus {
     margin: 0;
     font-family: 'TheSeasons';
-    font-weight: 100;
+    font-weight: 100 !important;
 }
 
 .e {
@@ -237,7 +237,7 @@ body {
     .matheus {
     margin: 0;
     font-family: 'TheSeasons';
-    font-weight: 100;
+    font-weight: 100 !important;
 }
     .AeM img {
         width: 35vw;
