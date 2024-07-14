@@ -22,6 +22,7 @@ html {
 header {
     display: flex;
     justify-content: center;
+    padding: 1%;
 }
 
 /* Corpo */
@@ -29,6 +30,9 @@ body {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    background-image: url('assets/bakground\(1920\ x\ 1080\ px\).png'); /* Imagem de fundo */
+    background-size: cover; /* Cobrir toda a área do body */
+    background-position: center; /* Centralizar a imagem */
 }
 
 /* Versículo */
@@ -36,19 +40,22 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Cormorant Garamond', sans-serif;
-    font-size: 12px;
+    font-size: 1em;
     font-weight: 100;
     text-align: center;
+    padding: 2%;
 }
 
 /* Família */
 .familia {
     display: flex;
     justify-content: center;
-    gap: 5%;
-    padding-bottom: 5%;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+    padding-bottom: 2%;
     font-family: 'Cormorant Garamond', sans-serif;
-    font-size: 12px;
+    font-size: 1em;
     font-weight: 100;
 }
 
@@ -57,6 +64,7 @@ body {
 .paisMatheus {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* Cleide e Paulo */
@@ -75,7 +83,7 @@ body {
     align-items: center;
     color: #E4A461;
     padding-bottom: 2%;
-    font-size: 18px;
+    font-size: 1.5em;
 }
 
 /* Ana, Matheus */
@@ -96,9 +104,11 @@ body {
 .data {
     display: flex;
     justify-content: center;
-    gap: 0.5%;
+    flex-direction: row;
+    align-items: center;
     color: #E4A461;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
+    font-size: 1.5em;
 }
 
 /* Setembro */
@@ -111,17 +121,17 @@ body {
 
 /* id mês ano e dia */
 #mes {
-    font-size: 20px;
+    font-size: 1.5em;
     margin-bottom: 1px;
 }
 
 #ano {
-    font-size: 20px;
+    font-size: 1.5em;
     margin-top: -1px;
 }
 
 #dia {
-    font-size: 50px;
+    font-size: 3em;
     margin-top: -15px;
 }
 
@@ -140,7 +150,7 @@ body {
 .l {
     margin-bottom: 0;
     font-family: 'Cormorant Garamond', sans-serif;
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: 600;
 }
 
@@ -159,7 +169,7 @@ body {
     padding-top: 20px;
     display: flex;
     justify-content: center;
-    font-size: 9.5px;
+    font-size: 0.75em;
     gap: 1.5%;
     color: #E4A461;
 }
@@ -178,14 +188,178 @@ body {
     text-align: center;
 }
 
-/* Mídia Query para Telas de 430 x 932 */
-@media only screen and (max-width: 430px) and (max-height: 932px) {
-    /* Ajustes específicos para telas menores */
+.icones img {
+    width: 130px; /* Tamanho padrão para ícones */
+}
+
+/* Background Responsivo */
+@media only screen and (max-width: 1024px) {
+    body {
+        background-image: url('assets/bakground\(1024\ x\ 768\ px\).png');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url('assets/bakground\(768\ x\ 1024\ px\).png');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-image: url('assets/bakground\(480\ x\ 800\ px\).png');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Mídia Query para Telas de 768px ou menos */
+@media only screen and (max-width: 768px) {
     .familia {
-        gap: 2%;
+        gap: 1.5%;
+        font-size: 1em;
     }
 
     .icones {
-        font-size: 8px;
+        font-size: 0.8em;
+    }
+
+    .icones img {
+        width: 110px; /* Ajuste do tamanho dos ícones */
+    }
+
+    .versiculo {
+        font-size: 1em;
+        padding: 3%;
+    }
+
+    .nome {
+        font-size: 1.3em;
+    }
+
+    .data {
+        font-size: 1.3em;
+    }
+
+    #mes,
+    #ano {
+        font-size: 1.3em;
+    }
+
+    #dia {
+        font-size: 2.8em;
+    }
+
+    .saba,
+    .h,
+    .l {
+        font-size: 1.3em;
+    }
+
+    .saba,
+    .h {
+        width: 100px;
+    }
+}
+
+/* Mídia Query para Telas de 430px ou menos */
+@media only screen and (max-width: 430px) {
+    .familia {
+        gap: 1%;
+        font-size: 0.9em;
+    }
+
+    .icones {
+        font-size: 0.7em;
+    }
+
+    .icones img {
+        width: 90px; /* Ajuste do tamanho dos ícones */
+    }
+
+    .versiculo {
+        font-size: 0.9em;
+        padding: 5%;
+    }
+
+    .nome {
+        font-size: 1.2em;
+    }
+
+    .data {
+        font-size: 1.2em;
+    }
+
+    #mes,
+    #ano {
+        font-size: 1.2em;
+    }
+
+    #dia {
+        font-size: 2.5em;
+    }
+
+    .saba,
+    .h,
+    .l {
+        font-size: 1.2em;
+    }
+
+    .saba,
+    .h {
+        width: 90px;
+    }
+}
+
+/* Mídia Query para Telas de 320px ou menos */
+@media only screen and (max-width: 320px) {
+    .familia {
+        gap: 0.5%;
+        font-size: 0.8em;
+    }
+
+    .icones {
+        font-size: 0.6em;
+    }
+
+    .icones img {
+        width: 70px; /* Ajuste do tamanho dos ícones */
+    }
+
+    .versiculo {
+        font-size: 0.8em;
+        padding: 4%;
+    }
+
+    .nome {
+        font-size: 1em;
+    }
+
+    .data {
+        font-size: 1em;
+    }
+
+    #mes,
+    #ano {
+        font-size: 1em;
+    }
+
+    #dia {
+        font-size: 2em;
+    }
+
+    .saba,
+    .h,
+    .l {
+        font-size: 1em;
+    }
+
+    .saba,
+    .h {
+        width: 70px;
     }
 }
