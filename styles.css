@@ -171,7 +171,7 @@ body {
 }
 
 .icones img {
-    width: 10vw; /* Tamanho relativo ao viewport width */
+    width: 7vw; 
 }
 
 @media only screen and (max-width: 1024px) {
@@ -231,6 +231,16 @@ body {
         background-image: url('assets/bakground\(412\ x\ 915\ px\).png');
         background-size: cover;
         background-repeat: no-repeat;
+        background-position-y: top;
+    }
+    .ana,
+    .matheus {
+    margin: 0;
+    font-family: 'TheSeasons';
+    font-weight: 100;
+}
+    .AeM img {
+        width: 35vw;
     }
     .familia {
         gap: 1%;
