@@ -27,7 +27,7 @@ body {
     background-image: url('assets/bakground\(1920\ x\ 1080\ px\).png');
     background-size: cover;
     background-position: center;
-    font-size: 1vw; /* Fonte base relativa ao viewport width */
+    font-size: 1vw;
 }
 
 .versiculo {
@@ -102,7 +102,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Merriweather', sans-serif;
 }
 
 #mes {
@@ -240,8 +239,8 @@ body {
         width: 35vw;
     }
     .familia {
-        gap: 1%;
-        font-size: 3em;
+        gap: 3%;
+        font-size: 2.3em;
     }
     .icones {
         font-size: 2em;
@@ -250,7 +249,7 @@ body {
         width: 20vw;
     }
     .versiculo {
-        font-size: 3em;
+        font-size: 2.5em;
         padding: 4%;
     }
     .nome {
@@ -258,10 +257,11 @@ body {
     }
     .data {
         font-size: 4em;
+        gap: 1%;
     }
     #mes,
     #ano {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     #dia {
         font-size: 2.5em;
