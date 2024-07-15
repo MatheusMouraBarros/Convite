@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'TheSeasons';
-    src: url('fonts/Fontspring-DEMO-theseasons-lt.otf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -82,8 +79,8 @@ body {
 .ana,
 .matheus {
     margin: 0;
-    font-family: 'TheSeasons';
-    font-weight: 100 !important;
+    font-family: 'Spectral', sans-serif;
+    font-weight: 400;
 }
 
 .e {
@@ -235,10 +232,10 @@ body {
     }
     .ana,
     .matheus {
-    margin: 0;
-    font-family: 'TheSeasons';
-    font-weight: 100 !important;
-}
+        margin: 0;
+        font-family: 'Spectral', sans-serif;
+        font-weight: 400;
+    }
     .AeM img {
         width: 35vw;
     }
