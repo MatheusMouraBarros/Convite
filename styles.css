@@ -106,7 +106,7 @@ body {
 
 #mes {
     font-size: 1.5em;
-    margin-bottom: 1px;
+    margin-bottom: 14%;
 }
 
 #ano {
@@ -124,16 +124,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 5%;
 }
 
 .saba,
 .h,
 .l {
-    margin-bottom: 0;
+    margin-bottom: 1%;
     font-family: 'Merriweather', sans-serif;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .saba,
