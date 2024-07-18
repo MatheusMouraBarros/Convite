@@ -42,7 +42,7 @@ body {
     font-weight: 100;
     text-align: center;
     padding: 2%;
-    color: #3D3D3D;
+    color: #E4A461;
 }
 
 .familia {
@@ -247,7 +247,7 @@ body {
     }
     .familia {
         gap: 3%;
-        font-size: 2.3em;
+        font-size: 2em;
     }
     .icones img {
         width: 20vw;
