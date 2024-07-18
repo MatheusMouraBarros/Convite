@@ -19,12 +19,16 @@ header {
     justify-content: center;
     padding: 1%;
 }
-
+.AeM img {
+    width: 100%; /* Ajuste o tamanho conforme necessário */
+    max-width: 500px; /* Define um limite máximo de largura */
+    height: auto; /* Garante a proporção da imagem */
+}
 body {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    background-image: url('assets/bakground\(1920\ x\ 1080\ px\).png');
+    background-image: url('assets/bakground(1920 x 1080 px).png');
     background-size: cover;
     background-position: center;
     font-size: 1vw;
@@ -149,7 +153,7 @@ body {
     padding-top: 20px;
     display: flex;
     justify-content: center;
-    font-size: 0.75em;
+    flex-wrap: wrap;
     gap: 4%;
     color: #E4A461;
 }
@@ -164,32 +168,36 @@ body {
     font-family: 'Merriweather', sans-serif;
     font-weight: 100;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .icones img {
-    width: 7vw; 
+    width: 7vw;
 }
 
 @media only screen and (max-width: 1024px) {
     body {
-        background-image: url('assets/bakground\(1024\ x\ 768\ px\).png');
+        background-image: url('assets/bakground(1024 x 768 px).png');
         background-size: cover;
         background-position: center;
+    }
+    .icones {
+        gap: 3%;
+    }
+    .icones img {
+        width: 10vw;
     }
 }
 
 @media only screen and (max-width: 768px) {
     body {
-        background-image: url('assets/bakground\(768\ x\ 1024\ px\).png');
+        background-image: url('assets/bakground(768 x 1024 px).png');
         background-size: cover;
         background-position: center;
     }
     .familia {
         gap: 1.5%;
         font-size: 1em;
-    }
-    .icones {
-        font-size: 0.8em;
     }
     .icones img {
         width: 15vw;
@@ -224,7 +232,7 @@ body {
 
 @media only screen and (max-width: 480px) {
     body {
-        background-image: url('assets/bakground\(412\ x\ 915\ px\).png');
+        background-image: url('assets/bakground(412 x 915 px).png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: top;
@@ -235,15 +243,9 @@ body {
         font-family: 'Spectral', sans-serif;
         font-weight: 400;
     }
-    .AeM img {
-        width: 35vw;
-    }
     .familia {
         gap: 3%;
         font-size: 2.3em;
-    }
-    .icones {
-        font-size: 2em;
     }
     .icones img {
         width: 20vw;
@@ -281,9 +283,6 @@ body {
     .familia {
         gap: 0.5%;
         font-size: 1em;
-    }
-    .icones {
-        font-size: 0.8em;
     }
     .icones img {
         width: 25vw;
