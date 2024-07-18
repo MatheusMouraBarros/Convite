@@ -250,6 +250,12 @@ body {
     .icones img {
         width: 20vw;
     }
+    .local,
+    .presenca,
+    .avisos,
+    .presentes {
+        font-size: 1.3em; /* Ajuste o tamanho da fonte conforme necessário */
+    }
     .versiculo {
         font-size: 2.5em;
         padding: 4%;
