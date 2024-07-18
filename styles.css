@@ -42,6 +42,7 @@ body {
     font-weight: 100;
     text-align: center;
     padding: 2%;
+    color: #3D3D3D;
 }
 
 .familia {
@@ -54,6 +55,7 @@ body {
     font-family: 'Merriweather', sans-serif;
     font-size: 1em;
     font-weight: 100;
+    color: #3D3D3D;
 }
 
 .paisAna,
@@ -155,7 +157,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 4%;
-    color: #E4A461;
+    color: #3D3D3D;;
 }
 
 .local,
